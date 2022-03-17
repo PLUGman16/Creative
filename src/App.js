@@ -1,9 +1,20 @@
+import { Nav } from "./Components/Nav/Navigation";
 
 
 function App() {
   return (
     <>
-      Creative
+      <header>
+        <nav>
+          <Nav />
+        </nav>
+      </header>
+
+      <main>
+
+      </main>
+
+      <footer></footer>
     </>
   );
 }
