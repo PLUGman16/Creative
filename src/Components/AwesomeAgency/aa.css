@@ -1,0 +1,79 @@
+.aa {
+    max-height: 738px;
+    background-color: #11749e;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 101px 0;
+}
+
+.aa__tittle-tittle {
+    font-family: Gotham;
+    font-size: 37.6px;
+    line-height: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    position: relative;
+}
+.aa__tittle-tittle::after {
+    content: 'W';
+    position: absolute;
+    left: 23%;
+    right: 23%;
+    opacity: 0.18;
+    font-family: 'Roboto Condensed';
+    font-size: 247.2px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+
+.aa__list-list {
+    display: flex;
+
+    margin-top: 68px;
+}
+.aa__list-item {
+    margin: 0 23.5px;
+    list-style-type: none;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aa_list-imgBlock {
+    width: 133px;
+    height: 133px;
+    background-color: #2e85aa;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aa__list-img {
+    width: 34px;
+    height: 34px;
+
+}
+.aa__list-tittle {
+    font-family: Gotham;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.aa__list-paragraph {
+    font-family: Gotham;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}

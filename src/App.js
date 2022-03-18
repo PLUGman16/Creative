@@ -1,3 +1,4 @@
+import { Aa } from "./Components/AwesomeAgency/AA";
 import { Hero } from "./Components/Hero/Hero";
 import { Nav } from "./Components/Nav/Navigation";
 
@@ -14,6 +15,7 @@ function App() {
       <main>
         <Hero />
         <label id="scroll"/>
+        <Aa />
       </main>
 
       <footer></footer>
