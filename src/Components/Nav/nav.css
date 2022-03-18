@@ -1,5 +1,5 @@
 .nav {
-    padding: 22px 214px 22px;
+    padding: 22px 0 22px;
 
     -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.38);
     -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.38);
@@ -7,6 +7,7 @@
 
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
 
     position: fixed;
@@ -23,7 +24,9 @@
     box-shadow: 12px 8px 0px 0px rgba(255, 255, 255, 0.74);
 }
 
-
+.nav__navbar {
+    display: flex;
+}
 .nav__links{
     height: 100%;
     margin-left: 163px;
@@ -34,6 +37,11 @@
 }
 .nav__links__list-item {
     padding: 0 25.5px;
+}
+@media(max-width: 1200px) {
+    .nav__links__list-item {
+        padding: 0 12px;
+    }
 }
 .nav__links__list-link {
     position: relative;
@@ -70,4 +78,76 @@
     transition: .5s;
     transition-timing-function: cubic-bezier(0.6,0.1,0.15,0.8);
     transform: scale(1.2);
+}
+
+
+
+.nav__labelBtn {
+    display: none;
+}
+.nav__btn {
+    display: none;
+}
+@media(max-width: 1000px) {
+    .nav__navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: absolute;
+        right: 0;
+        top: -400px;
+        background-color: grey;
+        transition: .5s;
+        transition-timing-function: cubic-bezier(0.6,0.1,0.15,0.8);
+        
+    }
+    .nav__links {
+        margin: 0;
+    }
+    .nav__links__list {
+        display: inline-block;
+        padding: 0;
+    }
+    .nav__links__list-item {
+        padding: 10px 0;
+        font-size: 24px;
+    }
+    .nav__socialLink-list {
+        padding: 0;
+    }
+
+
+    .nav__labelBtn {
+        display: block;
+        position: relative;
+        right: -30%;
+    }
+    .nav__labelBtn span {
+        display: block;
+        width: 30px;
+        height: 1px;
+        background-color: #fff;
+    }
+    .nav__labelBtn::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        top: 10px;
+    }
+    .nav__labelBtn::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        top: -10px;
+    }
+    .nav__btn {
+        display: none;
+    }
 }

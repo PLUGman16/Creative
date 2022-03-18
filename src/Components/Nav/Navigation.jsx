@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import './nav.css'
 import Logo from './img/logo.png'
 import T from './img/t.png'
@@ -7,13 +7,31 @@ import S from './img/s.png'
 import In from './img/in.png'
 
 export const Nav = () => {
+    let [position, setPosition] = useState({
+    })
+    const ten = {top: '-400px'}, hundred = {top: '0px'}
+    const Open = () => {
+        navBtn.current = !navBtn.current
+        if(navBtn.current == true) {
+            setPosition({...position, ...ten})
+        } else {
+            setPosition({...position, ...hundred})
+        }
+    }
+    const navBtn = useRef(false)
+    
     return (
         <>
             <div className='nav'>
+                <input id="navChecbox" ref={navBtn} type="checkbox" className="nav__btn"/>
+                <label onClick={Open} htmlFor='navChecbox' className="nav__labelBtn">
+                    <span></span>
+                </label>
                 <div className="nav__logo">
                     <img src={Logo} alt="Упс! Здесь должно было быть Лого" className="nav__logo-img" />
                 </div>
 
+                <div style={position} className="nav__navbar">
                 <div className="nav__links">
                     <ul className="nav__links__list">
                         <li className="nav__links__list-item">
@@ -72,6 +90,7 @@ export const Nav = () => {
                             </a>
                         </li>
                     </ul>
+                </div>
                 </div>
             </div>
         </>
