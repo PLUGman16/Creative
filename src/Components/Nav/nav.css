@@ -7,6 +7,10 @@
 
     display: flex;
     align-items: center;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
 }
 .nav__logo {
     max-width: 67px;
@@ -22,19 +26,20 @@
 
 .nav__links{
     height: 100%;
+    margin-left: 163px;
 }
 .nav__links__list {
     display: flex;
     list-style-type: none;
 }
 .nav__links__list-item {
-    padding: 0 27.5px;
+    padding: 0 25.5px;
 }
 .nav__links__list-link {
     position: relative;
     text-decoration: none;
     font-family: 'Myriad Pro';
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
     font-weight: 400;
     color: #ffffff;

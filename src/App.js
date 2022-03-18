@@ -1,3 +1,4 @@
+import { Hero } from "./Components/Hero/Hero";
 import { Nav } from "./Components/Nav/Navigation";
 
 
@@ -11,7 +12,8 @@ function App() {
       </header>
 
       <main>
-
+        <Hero />
+        <label id="scroll"/>
       </main>
 
       <footer></footer>

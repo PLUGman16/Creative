@@ -1,0 +1,90 @@
+.hero {
+    max-width: 100%;
+    max-height: 1082px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero__bg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.hero__bg-img {
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+.hero__tittle {
+    text-align: center;
+    
+    margin-top: 8.5%;
+}
+.hero__tittle-tittle {
+    font-family: Gotham;
+    font-size: 152.6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+    color: #f5f5f5;
+}
+.hero__tittle-webAdress {
+    font-family: Gotham;
+    font-size: 24.8px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.74em;
+    color: #11749e;
+}
+
+
+.hero__scroll-name {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-bottom: 22px;
+}
+.hero__scroll-btn {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    background-color: rgba(128,128,128,0.0);
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+.hero__scroll-btn::after {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 32.5px;
+    left: 20.5px;
+}
+.hero__scroll-btn::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 32.5px;
+    right: 20.5px;
+}
+.hero__scroll-btn:hover {
+    transform: scale(1.02);
+    transition: .5s;
+}
+.hero__scroll-link {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
