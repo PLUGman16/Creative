@@ -7,8 +7,10 @@ import S from './img/s.png'
 import In from './img/in.png'
 
 export const Nav = () => {
-    let [position, setPosition] = useState({
-    })
+    const [position, setPosition] = useState({})
+    const [animBurgerUp, setAnimBurgerUp] = useState({})
+    const [animBurgerMiddle, setAnimBurgerMiddle] = useState({})
+    const [animBurgerDown, setAnimBurgerDown] = useState({})
     const ten = {top: '-400px'}, hundred = {top: '0px'}
     const Open = () => {
         navBtn.current = !navBtn.current
@@ -16,6 +18,16 @@ export const Nav = () => {
             setPosition({...position, ...ten})
         } else {
             setPosition({...position, ...hundred})
+        }
+
+        if(navBtn.current == true) {
+            setAnimBurgerUp({transform: 'rotate(0deg)'})
+            setAnimBurgerMiddle({transform: 'scale(1)'})
+            setAnimBurgerDown({transform: 'rotate(0deg)'})
+        } else {
+            setAnimBurgerUp({transform: 'rotate(45deg)', margin: '0'})
+            setAnimBurgerMiddle({transform: 'scale(0)'})
+            setAnimBurgerDown({transform: 'rotate(-45deg)', margin: '0'})
         }
     }
     const navBtn = useRef(false)
@@ -25,7 +37,9 @@ export const Nav = () => {
             <div className='nav'>
                 <input id="navChecbox" ref={navBtn} type="checkbox" className="nav__btn"/>
                 <label onClick={Open} htmlFor='navChecbox' className="nav__labelBtn">
-                    <span></span>
+                    <span style={animBurgerUp} className="burgerLine-up"></span>
+                    <span style={animBurgerMiddle} className="burgerLine-middle"></span>
+                    <span style={animBurgerDown} className="burgerLine-down"></span>
                 </label>
                 <div className="nav__logo">
                     <img src={Logo} alt="Упс! Здесь должно было быть Лого" className="nav__logo-img" />

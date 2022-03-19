@@ -121,31 +121,38 @@
     .nav__labelBtn {
         display: block;
         position: relative;
-        right: -30%;
+        z-index: 1;
+        right: -50%;
+        padding: 10px 0;
+        cursor: pointer;
     }
-    .nav__labelBtn span {
+    .burgerLine-middle {
         display: block;
         width: 30px;
         height: 1px;
         background-color: #fff;
+        transform: rotate(0);
+        transition: .5s;
     }
-    .nav__labelBtn::after {
+    .burgerLine-up {
         content: '';
         display: block;
         width: 30px;
         height: 1px;
         background-color: #fff;
-        position: absolute;
-        top: 10px;
+        margin: 10px 0;
+        transform: rotate(0);
+        transition: .5s;
     }
-    .nav__labelBtn::before {
+    .burgerLine-down {
         content: '';
         display: block;
         width: 30px;
         height: 1px;
         background-color: #fff;
-        position: absolute;
-        top: -10px;
+        margin: 10px 0;
+        transform: rotate(0);
+        transition: .5s;
     }
     .nav__btn {
         display: none;
