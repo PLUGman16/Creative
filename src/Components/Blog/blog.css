@@ -1,0 +1,122 @@
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 92px 0;
+    text-align: center;
+}
+
+.blog__tittle-tittle {
+    font-family: Gotham;
+    font-size: 37.6px;
+    line-height: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #222222;
+
+    position: relative;
+}
+.blog__tittle-tittle::after {
+    content: 'B';
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    opacity: 0.18;
+    font-family: 'Roboto Condensed';
+    font-size: 247.2px;
+    font-weight: 700;
+    color: #222222;
+}
+.blog__tittle-subtittle {
+    font-family: Gotham;
+    font-size: 30.1px;
+    font-weight: 400;
+    color: #222222;
+    margin-top: 115px;
+}
+
+
+.blog__content {
+    margin-top: 76px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.blog__content__block {
+    max-width: 270px;
+    padding: 0 14.5px;
+}
+.blog__content-img {
+    width: 270px;
+    height: 280px;
+    margin-bottom: 22px;
+}
+.blog__content-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blog__content-tittle {
+    font-family: Gotham;
+    line-height: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #11749e;
+    margin: 22px 0 13px;
+}
+.blog__content-paragraph {
+    font-family: Gotham;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #222222;
+    margin: 13px 0 72px;
+}
+
+
+.blog__subtittle {
+    padding: 113px 100px 130px;
+    background-color: #11749e;
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width: 1120px) {
+    .blog__subtittle {
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 860px) {
+    .blog__subtittle {
+        padding: 50px 75px 60px;
+    }
+}
+.blog__subtittle-block {
+    display: flex;
+    align-items: center;
+    margin: 0 31.5px 0;
+    min-width: 450px;
+}
+@media(max-width: 550px) {
+    .blog__subtittle-block {
+        min-width: 300px;
+    }
+}
+.blog__subtittle-img {
+    width: 69px;
+    height: 69px;
+    margin-right: 34px;
+}
+.blog__subtittle-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blog__subtittle-paragraph {
+    font-family: Gotham;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}

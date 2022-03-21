@@ -35,7 +35,7 @@ export const Aa = () => {
 
     return (
         <>
-            <div className="aa">
+            <section className="aa">
                 <div className="aa__tittle">
                     <h2 className="aa__tittle-tittle">
                         We Are An Awesome Agency
@@ -65,7 +65,7 @@ export const Aa = () => {
                         }
                     </ul>
                 </div>
-            </div>
+            </section>
         </>
     )
 }

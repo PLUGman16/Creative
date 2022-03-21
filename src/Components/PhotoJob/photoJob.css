@@ -1,0 +1,60 @@
+.photojob {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.photojob__block {
+    display: flex;
+
+    max-height: 474px;
+}
+.photojob__block:nth-child(1) {
+    background-color: #222222;
+    color: #ffffff;
+}
+.photojob__block:nth-child(2) {
+    flex-direction: row-reverse;
+    background-color: #f3f3f3;
+    color: #222222;
+}
+
+.photojob__block-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+}
+.photojob__suptittle {
+    font-family: Gotham;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    
+}
+.photojob__tittle {
+    font-family: Gotham;
+    font-size: 25px;
+    line-height: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.photojob__subtittle {
+    font-family: Gotham;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+
+    padding: 0 150px;
+}
+
+.photojob__block-img {
+    max-width: 50%;
+    min-height: 100%;
+}
+.photojob__block-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
