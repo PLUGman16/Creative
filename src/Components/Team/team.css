@@ -1,0 +1,103 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 92px 0 34.5px;
+    text-align: center;
+}
+
+.team__tittle-tittle {
+    font-family: Gotham;
+    font-size: 37.6px;
+    line-height: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #222222;
+
+    position: relative;
+}
+.team__tittle-tittle::after {
+    content: 'T';
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    opacity: 0.18;
+    font-family: 'Roboto Condensed';
+    font-size: 247.2px;
+    font-weight: 700;
+    color: #222222;
+}
+.team__tittle-subtittle {
+    font-family: Gotham;
+    font-size: 30.1px;
+    font-weight: 400;
+    color: #222222;
+    margin-top: 115px;
+}
+
+
+.team__content {
+    padding-bottom: 55px;
+    margin-top: 34.5px;
+    width: 100%;
+}
+.team__list {
+    padding: 0 7.51%;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+@media(max-width: 1200px) {
+    .team__list {
+        flex-wrap: wrap;
+    }
+    .team__list-item {
+        padding: 15px 0;
+    }
+}
+.team__list-item {
+    margin: 0 15px;
+    position: relative;
+}
+.team__list-img {
+    width: 270px;
+    height: 414px;
+}
+.team__list-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.team__list-info {
+    width: 216px;
+    height: 117px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 10.5%;
+    right: 10.5%;
+    bottom: -100px;
+    transform: scale(0);
+    transition: .5s;
+}
+.team__list-item:hover .team__list-info {
+    bottom: -50px;
+    transform: scale(1);
+}
+.team__list-ingoName {
+    font-family: Gotham;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #11749e;
+    margin: 23px 0 6.5px;
+}
+.team__list-infoPosition {
+    font-family: Gotham;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000000;
+    margin: 6.5px 0 53px;
+}

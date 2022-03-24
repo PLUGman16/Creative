@@ -51,7 +51,7 @@ export const Blog = () => {
             <section className="blog">
                 <div className="blog__tittle">
                     <h2 className="blog__tittle-tittle">
-                        Let's blog;
+                        Let's blog
                     </h2>
                     <p className="blog__tittle-subtittle">
                         We love clean design and advanced digital solutions.

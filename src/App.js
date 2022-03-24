@@ -4,6 +4,7 @@ import { Hero } from "./Components/Hero/Hero";
 import { Nav } from "./Components/Nav/Navigation";
 import { Phone } from "./Components/Phone/Phone";
 import { PhotoJob } from "./Components/PhotoJob/PhotoJob";
+import { Team } from "./Components/Team/Team";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <PhotoJob />
         <Blog />
         <Phone />
+        <Team />
       </main>
 
       <footer></footer>
