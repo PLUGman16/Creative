@@ -1,5 +1,6 @@
 import { Aa } from "./Components/AwesomeAgency/AA";
 import { Blog } from "./Components/Blog/Blog";
+import { Form } from "./Components/Form/Form";
 import { Hero } from "./Components/Hero/Hero";
 import { Nav } from "./Components/Nav/Navigation";
 import { Phone } from "./Components/Phone/Phone";
@@ -24,6 +25,7 @@ function App() {
         <Blog />
         <Phone />
         <Team />
+        <Form />
       </main>
 
       <footer></footer>
