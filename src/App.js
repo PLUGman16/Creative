@@ -1,4 +1,5 @@
 import { Aa } from "./Components/AwesomeAgency/AA";
+import { BlockMap } from "./Components/BlockMap/BlockMap";
 import { Blog } from "./Components/Blog/Blog";
 import { Form } from "./Components/Form/Form";
 import { Hero } from "./Components/Hero/Hero";
@@ -26,6 +27,7 @@ function App() {
         <Phone />
         <Team />
         <Form />
+        <BlockMap />
       </main>
 
       <footer></footer>
