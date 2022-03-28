@@ -1,0 +1,25 @@
+.footer {
+    height: 116px;
+    width: 100%;
+    background-color: #222222;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media(max-width: 650px) {
+    .footer {
+        flex-direction: column;
+    }
+}
+
+
+.footer__content {
+    font-family: Roboto;
+    font-size: 13px;
+    line-height: 36px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}

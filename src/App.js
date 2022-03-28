@@ -1,6 +1,7 @@
 import { Aa } from "./Components/AwesomeAgency/AA";
 import { BlockMap } from "./Components/BlockMap/BlockMap";
 import { Blog } from "./Components/Blog/Blog";
+import { Footer } from "./Components/Footer/Footer";
 import { Form } from "./Components/Form/Form";
 import { Hero } from "./Components/Hero/Hero";
 import { Nav } from "./Components/Nav/Navigation";
@@ -30,7 +31,9 @@ function App() {
         <BlockMap />
       </main>
 
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
