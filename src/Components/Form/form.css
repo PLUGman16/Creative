@@ -1,4 +1,5 @@
 .form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,7 +45,7 @@
     flex-direction: column;
 }
 .form__form-area {
-    width: 326px;
+    width: 20.39vw;
     height: 11px;
     background-color: rgba(128,128,128,0.0);
     border: 1px solid #ffffff;
@@ -59,7 +60,8 @@
     color: #ffffff;
 }
 .form__form-textarea {
-    width: 1123px;
+    min-width: 500px;
+    width: 70.1vw;
     height: 114px;
     background-color: rgba(128,128,128,0.0);
     border: 1px solid #ffffff;
@@ -86,4 +88,32 @@
 
     padding: 19px 63px;
     background-color: #11749e;
+}
+
+@media(max-width: 820px) {
+    .form__tittle-tittle {
+        font-size: 30px;
+    }
+    .form__tittle-tittle::after {
+        top: 2%;
+    }
+}
+@media(max-width: 640px) {
+    .form__tittle-tittle::after {
+        top: 14%;
+    }
+}
+@media(max-width: 572px) {
+    .form__form-block {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .form__form-area {
+        width: 70.1vw;
+    }
+    .form__form-textarea {
+        min-width: 250px;
+        width: 85%;
+    }
 }

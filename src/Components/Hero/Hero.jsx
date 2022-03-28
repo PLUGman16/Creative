@@ -6,9 +6,7 @@ export const Hero = () => {
     return (
         <>
             <div className="hero">
-                <div className="hero__bg">
-                    <img src={HeroBG} alt="Упс! Здесь должен был быть задник" className="hero__bg-img" />
-                </div>
+                
 
                 <div className="hero__tittle">
                     <h1 className="hero__tittle-tittle">

@@ -5,6 +5,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background-image: url(./img/hero_bg.jpg);
 }
 .hero__bg {
     width: 100%;
@@ -43,7 +45,37 @@
     letter-spacing: 0.74em;
     color: #11749e;
 }
-
+@media(max-width: 900px) {
+    .hero__tittle-tittle {
+        font-size: 120px;
+    }
+    .hero__tittle-webAdress {
+        font-size: 20px;
+        letter-spacing: 0.40em;
+    }
+}
+@media(max-width: 660px) {
+    .hero__tittle {
+        margin-top: 30%;
+    }
+    .hero__tittle-tittle {
+        font-size: 80px;
+    }
+    .hero__tittle-webAdress {
+        font-size: 18px;
+        letter-spacing: 0.1em;
+    }
+}
+@media(max-width: 410px) {
+    .hero__tittle {
+        margin-top: 50%;
+    }
+}
+@media(max-width: 450px) {
+    .hero__tittle-tittle {
+        font-size: 50px;
+    }
+}
 
 .hero__scroll-name {
     font-family: 'Open Sans';

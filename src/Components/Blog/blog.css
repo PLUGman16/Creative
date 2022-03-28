@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-around;
 
-    padding: 92px 0;
+    padding: 92px 0 0;
     text-align: center;
 }
 
@@ -101,6 +101,9 @@
 @media(max-width: 550px) {
     .blog__subtittle-block {
         min-width: 300px;
+    }
+    .blog__subtittle-block {
+        margin: 0 7.5px 0;
     }
 }
 .blog__subtittle-img {
